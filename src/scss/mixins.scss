@@ -1,0 +1,46 @@
+@mixin btn{
+   padding: 15px 70px;
+   border: 1px solid #fff;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 900;
+   text-transform: uppercase;
+   transition: .3s linear;
+   &:hover{
+	   background: #458de5;
+	   border-color: #458de5;
+   }
+   &:focus{
+	   outline: none;
+   }
+}
+
+@mixin flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin chevron{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #fff;
+	border-left: 0px solid transparent;
+	border-top: 0px solid transparent;
+	opacity: 1;
+	transform: rotate(45deg);
+	transition: .3s linear;
+	
+}
